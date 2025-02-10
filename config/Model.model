@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<ns3:modelConfig xsi:type="ns3:ModelConfig" folder="" pauseCalculations="false" entityCode="1" loadPath="bit3" entityName="bit3" version="46" name="bit3" lastUpdated="2025-02-06T15:51:30.824+02:00" lastUpdatedBy="admin" id="admin:MODEL:bit3" xmlns:ns6="http://www.modelshop.com/services/account/types" xmlns:ns5="http://www.modelshop.com/datacore/message/types" xmlns:ns8="http://www.modelshop.com/datacore/generator/types" xmlns:ns7="http://www.modelshop.com/datacore/repository/types" xmlns:ns2="http://www.modelshop.com/datacore/view/types" xmlns:ns4="http://www.modelshop.com/services/model/types" xmlns:ns3="http://www.modelshop.com/model/model/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <datalists entityCode="4" entityName="Stock Fundamental" version="46" name="Stock Fundamental" created="2025-02-06T15:51:30.823+02:00" createdBy="admin" lastUpdated="2025-02-06T15:51:30.823+02:00" lastUpdatedBy="admin" id="Stock Fundamental">
+        <dataFields type="text" fieldCode="100" rawType="java.lang.String" allowNull="true" name="Symbol" initialized="true" id="Symbol"/>
+        <dataFields type="text" fieldCode="101" rawType="java.lang.String" allowNull="true" name="Name" initialized="true" id="Name"/>
+        <dataFields type="text" fieldCode="102" rawType="java.lang.String" allowNull="true" name="Sector" initialized="true" id="Sector"/>
+        <dataFields type="decimal" fieldCode="103" rawType="java.math.BigDecimal" allowNull="true" name="Price" initialized="true" id="Price"/>
+        <dataFields type="decimal" format="0.00" fieldCode="104" rawType="java.math.BigDecimal" allowNull="true" name="Dividend" initialized="true" id="Dividend"/>
+        <dataFields type="decimal" fieldCode="105" rawType="java.math.BigDecimal" allowNull="true" name="EPS" initialized="true" id="EPS"/>
+        <dataFields type="decimal" fieldCode="106" rawType="java.math.BigDecimal" allowNull="true" name="Book Value" initialized="true" id="Book Value"/>
+        <dataFields type="decimal" fieldCode="107" rawType="java.math.BigDecimal" allowNull="true" name="52 week low" initialized="true" id="52 week low"/>
+        <dataFields type="decimal" fieldCode="108" rawType="java.math.BigDecimal" allowNull="true" name="52 week high" initialized="true" id="52 week high"/>
+        <dataFields type="decimal" fieldCode="109" rawType="java.math.BigDecimal" allowNull="true" name="Market Cap" initialized="true" id="Market Cap"/>
+        <dataFields type="text" fieldCode="110" readOnly="true" rawType="java.lang.String" name="sourceName" description="Source name" initialized="true" id="sourceName">
+            <defaultValue source="'Manual Entry'"/>
+        </dataFields>
+        <dataFields type="integer" fieldCode="111" readOnly="true" rawType="java.lang.Long" name="lineNumber" description="Source line number" initialized="true" id="lineNumber">
+            <defaultValue source="id"/>
+        </dataFields>
+    </datalists>
+    <datalists entityCode="2" entityName="Strategy" version="46" name="Strategy" created="2025-02-06T15:51:30.823+02:00" createdBy="admin" lastUpdated="2025-02-06T15:51:30.823+02:00" lastUpdatedBy="admin" id="Strategy">
+        <dataFields type="text" fieldCode="100" rawType="java.lang.String" allowNull="true" name="Name" initialized="true" id="Name"/>
+        <dataFields type="integer" fieldCode="101" rawType="java.lang.Long" allowNull="true" name="Price to Earnings" initialized="true" id="Price to Earnings"/>
+        <dataFields type="decimal" format="0.00" fieldCode="102" rawType="java.math.BigDecimal" allowNull="true" name="Price to Book" initialized="true" id="Price to Book"/>
+        <dataFields type="decimal" format="0.00%" fieldCode="103" rawType="java.math.BigDecimal" allowNull="true" name="Dividend Yield" initialized="true" id="Dividend Yield"/>
+        <dataFields type="decimal" format="0%" fieldCode="104" rawType="java.math.BigDecimal" allowNull="true" name="Expected Return" initialized="true" id="Expected Return"/>
+        <dataFields type="text" fieldCode="105" readOnly="true" rawType="java.lang.String" name="sourceName" description="Source name" initialized="true" id="sourceName">
+            <defaultValue source="'Manual Entry'"/>
+        </dataFields>
+        <dataFields type="integer" fieldCode="106" readOnly="true" rawType="java.lang.Long" name="lineNumber" description="Source line number" initialized="true" id="lineNumber">
+            <defaultValue source="id"/>
+        </dataFields>
+    </datalists>
+    <datalists entityCode="9" entityName="Datalist1" version="46" name="Datalist1" description="" created="2025-02-06T15:51:30.823+02:00" createdBy="admin" lastUpdated="2025-02-06T15:51:30.823+02:00" lastUpdatedBy="admin" id="Datalist1"/>
+    <datalists entityCode="10" entityName="users_report" version="46" name="users_report" created="2025-02-06T15:51:30.824+02:00" createdBy="admin" lastUpdated="2025-02-06T15:51:30.824+02:00" lastUpdatedBy="admin" id="users_report">
+        <dataFields type="text" fieldCode="100" rawType="java.lang.String" allowNull="true" name="Id" initialized="true" id="Id"/>
+        <dataFields type="text" fieldCode="101" rawType="java.lang.String" allowNull="true" name="Name" initialized="true" id="Name"/>
+        <dataFields type="text" fieldCode="102" rawType="java.lang.String" allowNull="true" name="Account Id" initialized="true" id="Account Id"/>
+        <dataFields type="text" fieldCode="103" rawType="java.lang.String" allowNull="true" name="User Type" initialized="true" id="User Type"/>
+        <dataFields type="text" fieldCode="104" rawType="java.lang.String" allowNull="true" name="First Name" initialized="true" id="First Name"/>
+        <dataFields type="text" fieldCode="105" rawType="java.lang.String" allowNull="true" name="Last Name" initialized="true" id="Last Name"/>
+        <dataFields type="text" fieldCode="106" rawType="java.lang.String" allowNull="true" name="eMail" initialized="true" id="eMail"/>
+        <dataFields type="text" fieldCode="107" rawType="java.lang.String" allowNull="true" name="Organization Id" initialized="true" id="Organization Id"/>
+        <dataFields type="datetime" fieldCode="108" rawType="com.modelshop.datacore.datatype.Date" allowNull="true" name="Last Login" initialized="true" id="Last Login"/>
+        <dataFields type="datetime" fieldCode="109" rawType="com.modelshop.datacore.datatype.Date" allowNull="true" name="Last Updated" initialized="true" id="Last Updated"/>
+        <dataFields type="text" fieldCode="110" rawType="java.lang.String" allowNull="true" name="Last Updated By" initialized="true" id="Last Updated By"/>
+        <dataFields type="datetime" fieldCode="111" rawType="com.modelshop.datacore.datatype.Date" allowNull="true" name="Created" initialized="true" id="Created"/>
+        <dataFields type="text" fieldCode="112" rawType="java.lang.String" allowNull="true" name="Created By" initialized="true" id="Created By"/>
+        <dataFields type="integer" fieldCode="113" rawType="java.lang.Long" allowNull="true" name="Login Attempts" initialized="true" id="Login Attempts"/>
+        <dataFields type="boolean" fieldCode="114" rawType="java.lang.Boolean" allowNull="true" name="Force Change Password" initialized="true" id="Force Change Password"/>
+        <dataFields type="boolean" fieldCode="115" rawType="java.lang.Boolean" allowNull="true" name="Agreed To Terms And Conditions" initialized="true" id="Agreed To Terms And Conditions"/>
+        <dataFields type="boolean" fieldCode="116" rawType="java.lang.Boolean" allowNull="true" name="Share Contact Info" initialized="true" id="Share Contact Info"/>
+        <dataFields type="text" fieldCode="117" rawType="java.lang.String" allowNull="true" name="Display Theme" initialized="true" id="Display Theme"/>
+        <dataFields type="text" fieldCode="118" rawType="java.lang.String" allowNull="true" name="View Mode" initialized="true" id="View Mode"/>
+        <dataFields fieldCode="119" rawType="java.lang.Object" allowNull="true" name="Auth Provider" initialized="true" id="Auth Provider"/>
+        <dataFields fieldCode="120" rawType="java.lang.Object" allowNull="true" name="User Image" initialized="true" id="User Image"/>
+        <dataFields type="text" fieldCode="121" rawType="java.lang.String" allowNull="true" name="Authorities" initialized="true" id="Authorities"/>
+        <dataFields type="boolean" fieldCode="122" rawType="java.lang.Boolean" allowNull="true" name="Enabled" initialized="true" id="Enabled"/>
+        <dataFields fieldCode="123" rawType="java.lang.Object" allowNull="true" name="Groups" initialized="true" id="Groups"/>
+        <dataFields type="text" fieldCode="124" readOnly="true" rawType="java.lang.String" name="sourceName" description="Source name" initialized="true" id="sourceName">
+            <defaultValue source="'Manual Entry'"/>
+        </dataFields>
+        <dataFields type="integer" fieldCode="125" readOnly="true" rawType="java.lang.Long" name="lineNumber" description="Source line number" initialized="true" id="lineNumber">
+            <defaultValue source="id"/>
+        </dataFields>
+    </datalists>
+    <datalists entityCode="11" entityName="NNNNNNNN" version="46" name="NNNNNNNN" description="" created="2025-02-06T15:51:30.824+02:00" createdBy="admin" lastUpdated="2025-02-06T15:51:30.824+02:00" lastUpdatedBy="admin" id="NNNNNNNN"/>
+    <views allColumns="true" default="true" modelView="true" entityName="bit3" name="bit3" description="Default view for list bit3" id="bit3"/>
+    <views allColumns="true" default="true" entityName="Stock Fundamental" name="Stock Fundamental" description="Default view for list Stock Fundamental" id="Stock Fundamental"/>
+    <views allColumns="true" default="true" entityName="Datalist1" name="Datalist1" description="Default view for list Datalist1" id="Datalist1"/>
+    <views allColumns="true" default="true" entityName="users_report" name="users_report" description="Default view for list users_report" id="users_report"/>
+    <views allColumns="true" default="true" entityName="NNNNNNNN" name="NNNNNNNN" description="Default view for list NNNNNNNN" id="NNNNNNNN"/>
+    <views allColumns="true" default="true" entityName="Strategy" name="Strategy" description="Default view for list Strategy" id="Strategy"/>
+    <connectors layoutDetected="true" entityName="Stock Fundamental" version="25" name="Stock Fundamental" created="2025-02-06T15:06:24.339+02:00" createdBy="admin" lastUpdated="2025-02-06T15:06:24.339+02:00" lastUpdatedBy="admin" id="Stock Fundamental">
+        <connectorFields columnIndex="0" ignore="false" mapField="Symbol" type="text" rawType="String" allowNull="true" name="Symbol" id="Symbol"/>
+        <connectorFields columnIndex="1" ignore="false" mapField="Name" type="text" rawType="String" allowNull="true" name="Name" id="Name"/>
+        <connectorFields columnIndex="2" ignore="false" mapField="Sector" type="text" rawType="String" allowNull="true" name="Sector" id="Sector"/>
+        <connectorFields columnIndex="3" ignore="false" mapField="Price" type="decimal" rawType="BigDecimal" allowNull="true" name="Price" id="Price"/>
+        <connectorFields columnIndex="4" ignore="false" mapField="Dividend" type="decimal" format="0.00" rawType="BigDecimal" allowNull="true" name="Dividend" id="Dividend"/>
+        <connectorFields columnIndex="5" ignore="false" mapField="EPS" type="decimal" rawType="BigDecimal" allowNull="true" name="EPS" id="EPS"/>
+        <connectorFields columnIndex="6" ignore="false" mapField="Book Value" type="decimal" rawType="BigDecimal" allowNull="true" name="Book Value" id="Book Value"/>
+        <connectorFields columnIndex="7" ignore="false" mapField="52 week low" type="decimal" rawType="BigDecimal" allowNull="true" name="52 week low" id="52 week low"/>
+        <connectorFields columnIndex="8" ignore="false" mapField="52 week high" type="decimal" rawType="BigDecimal" allowNull="true" name="52 week high" id="52 week high"/>
+        <connectorFields columnIndex="9" ignore="false" mapField="Market Cap" type="decimal" rawType="BigDecimal" allowNull="true" name="Market Cap" id="Market Cap"/>
+        <connectorFields mapField="sourceName" type="text" readOnly="true" rawType="String" name="sourceName" description="Source name" id="sourceName"/>
+        <connectorFields mapField="lineNumber" type="integer" readOnly="true" rawType="Long" name="lineNumber" description="Source line number" id="lineNumber"/>
+        <dataSource connectorUrl="Stock Tutorial.xlsx">
+            <fileSource>
+                <dataSourceRefs>Stock Tutorial.xlsx</dataSourceRefs>
+            </fileSource>
+            <loadFilter/>
+        </dataSource>
+        <mediaConfig connectorMediaType="excel">
+            <excelMedia>
+                <component componentType="excelworksheet" componentId="rId1" componentName="Stock Fundamental" displayName="Stock Fundamental"/>
+            </excelMedia>
+        </mediaConfig>
+    </connectors>
+    <connectors layoutDetected="true" entityName="Strategy" version="25" name="Strategy" created="2025-02-06T15:06:24.345+02:00" createdBy="admin" lastUpdated="2025-02-06T15:06:24.345+02:00" lastUpdatedBy="admin" id="Strategy">
+        <connectorFields columnIndex="0" ignore="false" mapField="Name" type="text" rawType="String" allowNull="true" name="Name" id="Name"/>
+        <connectorFields columnIndex="1" ignore="false" mapField="Price to Earnings" type="integer" rawType="Long" allowNull="true" name="Price to Earnings" id="Price to Earnings"/>
+        <connectorFields columnIndex="2" ignore="false" mapField="Price to Book" type="decimal" format="0.00" rawType="BigDecimal" allowNull="true" name="Price to Book" id="Price to Book"/>
+        <connectorFields columnIndex="3" ignore="false" mapField="Dividend Yield" type="decimal" format="0.00%" rawType="BigDecimal" allowNull="true" name="Dividend Yield" id="Dividend Yield"/>
+        <connectorFields columnIndex="4" ignore="false" mapField="Expected Return" type="decimal" format="0%" rawType="BigDecimal" allowNull="true" name="Expected Return" id="Expected Return"/>
+        <connectorFields mapField="sourceName" type="text" readOnly="true" rawType="String" name="sourceName" description="Source name" id="sourceName"/>
+        <connectorFields mapField="lineNumber" type="integer" readOnly="true" rawType="Long" name="lineNumber" description="Source line number" id="lineNumber"/>
+        <dataSource connectorUrl="Stock Tutorial.xlsx">
+            <fileSource>
+                <dataSourceRefs>Stock Tutorial.xlsx</dataSourceRefs>
+            </fileSource>
+            <loadFilter/>
+        </dataSource>
+        <mediaConfig connectorMediaType="excel">
+            <excelMedia>
+                <component componentType="excelworksheet" componentId="rId4" componentName="Strategy" displayName="Strategy"/>
+            </excelMedia>
+        </mediaConfig>
+    </connectors>
+    <connectors layoutDetected="true" entityName="users_report" version="39" name="users_report" created="2025-02-06T15:34:54.433+02:00" createdBy="admin" lastUpdated="2025-02-06T15:34:54.433+02:00" lastUpdatedBy="admin" id="users_report">
+        <connectorFields columnIndex="0" ignore="false" mapField="Id" type="text" rawType="String" allowNull="true" name="Id" id="Id"/>
+        <connectorFields columnIndex="1" ignore="false" mapField="Name" type="text" rawType="String" allowNull="true" name="Name" id="Name"/>
+        <connectorFields columnIndex="2" ignore="false" mapField="Account Id" type="text" rawType="String" allowNull="true" name="Account Id" id="Account Id"/>
+        <connectorFields columnIndex="3" ignore="false" mapField="User Type" type="text" rawType="String" allowNull="true" name="User Type" id="User Type"/>
+        <connectorFields columnIndex="4" ignore="false" mapField="First Name" type="text" rawType="String" allowNull="true" name="First Name" id="First Name"/>
+        <connectorFields columnIndex="5" ignore="false" mapField="Last Name" type="text" rawType="String" allowNull="true" name="Last Name" id="Last Name"/>
+        <connectorFields columnIndex="6" ignore="false" mapField="eMail" type="text" rawType="String" allowNull="true" name="eMail" id="eMail"/>
+        <connectorFields columnIndex="7" ignore="false" mapField="Organization Id" type="text" rawType="String" allowNull="true" name="Organization Id" id="Organization Id"/>
+        <connectorFields columnIndex="8" ignore="false" mapField="Last Login" type="datetime" rawType="Date" allowNull="true" name="Last Login" id="Last Login"/>
+        <connectorFields columnIndex="9" ignore="false" mapField="Last Updated" type="datetime" rawType="Date" allowNull="true" name="Last Updated" id="Last Updated"/>
+        <connectorFields columnIndex="10" ignore="false" mapField="Last Updated By" type="text" rawType="String" allowNull="true" name="Last Updated By" id="Last Updated By"/>
+        <connectorFields columnIndex="11" ignore="false" mapField="Created" type="datetime" rawType="Date" allowNull="true" name="Created" id="Created"/>
+        <connectorFields columnIndex="12" ignore="false" mapField="Created By" type="text" rawType="String" allowNull="true" name="Created By" id="Created By"/>
+        <connectorFields columnIndex="13" ignore="false" mapField="Login Attempts" type="integer" rawType="Long" allowNull="true" name="Login Attempts" id="Login Attempts"/>
+        <connectorFields columnIndex="14" ignore="false" mapField="Force Change Password" type="boolean" rawType="Boolean" allowNull="true" name="Force Change Password" id="Force Change Password"/>
+        <connectorFields columnIndex="15" ignore="false" mapField="Agreed To Terms And Conditions" type="boolean" rawType="Boolean" allowNull="true" name="Agreed To Terms And Conditions" id="Agreed To Terms And Conditions"/>
+        <connectorFields columnIndex="16" ignore="false" mapField="Share Contact Info" type="boolean" rawType="Boolean" allowNull="true" name="Share Contact Info" id="Share Contact Info"/>
+        <connectorFields columnIndex="17" ignore="false" mapField="Display Theme" type="text" rawType="String" allowNull="true" name="Display Theme" id="Display Theme"/>
+        <connectorFields columnIndex="18" ignore="false" mapField="View Mode" type="text" rawType="String" allowNull="true" name="View Mode" id="View Mode"/>
+        <connectorFields columnIndex="19" ignore="false" mapField="Auth Provider" allowNull="true" name="Auth Provider" id="Auth Provider"/>
+        <connectorFields columnIndex="20" ignore="false" mapField="User Image" allowNull="true" name="User Image" id="User Image"/>
+        <connectorFields columnIndex="21" ignore="false" mapField="Authorities" type="text" rawType="String" allowNull="true" name="Authorities" id="Authorities"/>
+        <connectorFields columnIndex="22" ignore="false" mapField="Enabled" type="boolean" rawType="Boolean" allowNull="true" name="Enabled" id="Enabled"/>
+        <connectorFields columnIndex="23" ignore="false" mapField="Groups" allowNull="true" name="Groups" id="Groups"/>
+        <connectorFields mapField="sourceName" type="text" readOnly="true" rawType="String" name="sourceName" description="Source name" id="sourceName"/>
+        <connectorFields mapField="lineNumber" type="integer" readOnly="true" rawType="Long" name="lineNumber" description="Source line number" id="lineNumber"/>
+        <dataSource connectorUrl="users_report.xlsx">
+            <fileSource>
+                <dataSourceRefs>users_report.xlsx</dataSourceRefs>
+            </fileSource>
+            <loadFilter/>
+        </dataSource>
+        <mediaConfig connectorMediaType="excel">
+            <excelMedia>
+                <component componentType="excelworksheet" componentId="rId2" componentName="users_report" displayName="users_report"/>
+            </excelMedia>
+        </mediaConfig>
+    </connectors>
+    <extra name="ModelCanvasCoordinates" description="Coordinates for ModelCanvasCoordinates" id="ModelCanvasCoordinates">
+        <body>{"DATALIST:Stock Fundamental":{"x":743,"y":10},"CONNECTOR:Stock Fundamental":{"x":1024,"y":96},"CONNECTOR:Strategy":{"x":1232,"y":-60},"CONNECTOR:Price Target":{"x":-490,"y":244},"DATALIST:Price Target":{"x":-469,"y":145},"DATALIST:Strategy":{"x":903,"y":-2},"CONNECTOR:Sector Outlook":{"x":-896,"y":-202},"DATALIST:Sector Outlook":{"x":-950,"y":-117},"DATALIST:Datalist1":{"x":1027,"y":16},"DATALIST:Datalist2":{"x":850,"y":219},"DATALIST:Datalist3":{"x":637,"y":207},"DATALIST:users_report":{"x":861,"y":141},"CONNECTOR:users_report":{"x":1123,"y":291},"DATALIST:NNNNNNNN":{"x":409,"y":-110}}</body>
+    </extra>
+</ns3:modelConfig>
